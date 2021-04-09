@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.favRow{
+    background-color: indigo;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.card{
+    background-color: white;
+    display: inline-block;
+    margin: 1em;
+    padding: .5em;
+}
+
+@media only screen and (min-width: 768px) {
+    .favRow{
+        background-color: lightsteelblue;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .card{
+        background-color: white;
+        display: inline-block;
+        margin: 1em;
+        padding: .5em;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .favRow{
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+    .card{
+        background-color: white;
+        display: inline-block;
+        margin: 1em;
+        padding: .5em;
+    }
+}
